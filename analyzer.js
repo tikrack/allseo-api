@@ -23,23 +23,21 @@ async function analyze(info) {
     );
 
     if (!response.ok) {
-      throw new Error(`خطایی رخ داده است.`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const html = await response.text();
-
     const canonicalMatch = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
 
     if (canonicalMatch) {
-      const reportUrl = canonicalMatch[1];
-      return reportUrl;
+      return canonicalMatch[1];
     } else {
-      console.log("آدرس صفحه نهایی پیدا نشد.");
+      throw new Error("Canonical URL not found in the response page.");
     }
 
   } catch (error) {
-    console.error(" خطا در اجرای ", error.message);
+    throw new Error(`Analysis failed for ${info.url}: ${error.message}`);
   }
 }
 
-module.exports = analyze
+module.exports = analyze;
