@@ -388,5 +388,7 @@ analyzer.js
 ## 👨‍💻 توسعه‌دهنده
 
 **AllSEO Analysis CLI Tool**
+توسعه دهنده اصلی سایت allseo 
+Telegram: @dimaco_admin
 
 ساخته‌شده با ❤️ و JavaScript / Node.js
