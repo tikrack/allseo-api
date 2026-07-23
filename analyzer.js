@@ -4,6 +4,10 @@ async function analyze(info) {
   try {
     const { csrfToken, cookie } = await getCSRF();
 
+    console.log(csrfToken)
+    console.log(cookie);
+    
+
     const response = await fetch(
       "https://allseo.ir/website-analyzer/analyze/",
       {
