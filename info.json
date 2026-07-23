@@ -8,5 +8,220 @@
         "name": "SalehMarket",
         "url": "https://salehmarket.com/",
         "suite": "general"
+    },
+    {
+        "name": "FooladIran",
+        "url": "https://fooladiran.com/",
+        "suite": "general"
+    },
+    {
+        "name": "FooladKashan",
+        "url": "https://fooladkashan.com/",
+        "suite": "general"
+    },
+    {
+        "name": "IranCarpet",
+        "url": "https://irancarpet.us/",
+        "suite": "general"
+    },
+    {
+        "name": "Golabtuba",
+        "url": "https://golabtuba.com/",
+        "suite": "general"
+    },
+    {
+        "name": "TabibDaru",
+        "url": "https://tabibdaru.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ZareiCarpet",
+        "url": "https://zareicarpet.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ParsianSookht",
+        "url": "https://parsiansookht.com/",
+        "suite": "general"
+    },
+    {
+        "name": "RoseHouse",
+        "url": "https://rosehouse.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "Khazragolab",
+        "url": "https://khazragolab.com/",
+        "suite": "general"
+    },
+    {
+        "name": "KooshaStore",
+        "url": "https://kooshastore.com/",
+        "suite": "general"
+    },
+    {
+        "name": "NikCarpet",
+        "url": "https://nikcarpet.com/",
+        "suite": "general"
+    },
+    {
+        "name": "EmeraldDrug",
+        "url": "https://emeraldrug.com/",
+        "suite": "general"
+    },
+    {
+        "name": "GhasrFarsh",
+        "url": "https://ghasrfarsh.com/",
+        "suite": "general"
+    },
+    {
+        "name": "NegarestanHotel",
+        "url": "https://negarestanhotel.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ParhamRug",
+        "url": "https://parhamrug.com/",
+        "suite": "general"
+    },
+    {
+        "name": "NeginsadafMashhad",
+        "url": "https://neginsadafmashhad.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "Golabtashrifat",
+        "url": "https://golabtashrifat.com/",
+        "suite": "general"
+    },
+    {
+        "name": "BourseChoob",
+        "url": "https://boursechoob.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ParisRug",
+        "url": "https://parisrug.com/",
+        "suite": "general"
+    },
+    {
+        "name": "KashanSafar",
+        "url": "https://kashansafar.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "CipFile",
+        "url": "https://cipfile.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ShekarrizKashan",
+        "url": "https://shekarrizkashan.com/",
+        "suite": "general"
+    },
+    {
+        "name": "KidsCarpet",
+        "url": "https://kidscarpet.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "RoshaCarpet",
+        "url": "https://roshacarpet.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "ShadSho",
+        "url": "https://shadsho.com/",
+        "suite": "general"
+    },
+    {
+        "name": "VanitarShop",
+        "url": "https://vanitarshop.com/",
+        "suite": "general"
+    },
+    {
+        "name": "KashanGhesti",
+        "url": "https://kashanghesti.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "AdonisOils",
+        "url": "https://adonisoils.com/",
+        "suite": "general"
+    },
+    {
+        "name": "DejSaman",
+        "url": "https://dejsaman.com/",
+        "suite": "general"
+    },
+    {
+        "name": "MashinSazi",
+        "url": "https://mashinsazi.com/",
+        "suite": "general"
+    },
+    {
+        "name": "PooiaSteel",
+        "url": "https://pooiasteel.com/",
+        "suite": "general"
+    },
+    {
+        "name": "BetonNasr",
+        "url": "https://betonnasr.com/",
+        "suite": "general"
+    },
+    {
+        "name": "ShahrFarshKashan",
+        "url": "https://shahrefarshekashan.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "KashanNezam",
+        "url": "https://kashannezam.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "Nooshabad",
+        "url": "https://nooshabad.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "GolabKashan",
+        "url": "https://golabkashan.org/",
+        "suite": "general"
+    },
+    {
+        "name": "BarijSports",
+        "url": "https://barijsports.com/",
+        "suite": "general"
+    },
+    {
+        "name": "MoeinHesab",
+        "url": "https://moeinhesab.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "ArianTeam",
+        "url": "https://arianteam.com/",
+        "suite": "general"
+    },
+    {
+        "name": "SaffronLux",
+        "url": "https://saffronlux.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "ArianSEO",
+        "url": "https://arianseo.com/",
+        "suite": "general"
+    },
+    {
+        "name": "Farsherooz",
+        "url": "https://farsherooz.ir/",
+        "suite": "general"
+    },
+    {
+        "name": "ShahrMajazi",
+        "url": "https://shahrmajazi.com/",
+        "suite": "general"
     }
 ]
