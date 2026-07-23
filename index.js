@@ -1,24 +1,35 @@
-const response = await fetch(
-  "https://allseo.ir/website-analyzer/analyze/",
-  {
-    method: "POST",
+const getCSRF = require("./csrf-token")
 
-    credentials: "include",
+getCSRF().then(({ csrfToken, cookie }) => {
+    fetch(
+        "https://allseo.ir/website-analyzer/analyze/",
+        {
+            method: "POST",
 
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
+            credentials: "include",
 
-    body: new URLSearchParams({
-      csrfmiddlewaretoken: csrfToken,
-      suite: "general",
-      url: "https://example.com",
-    }),
-  }
-);
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-CSRFToken": csrfToken, 
+                "Cookie": cookie            
+            },
 
-console.log(response.status);
+            body: new URLSearchParams({
+                csrfmiddlewaretoken: csrfToken,
+                suite: "general",
+                url: "https://example.com",
+            }),
+        }
+    ).then(r => {
+        r.text().then(html => {
+            const canonicalMatch = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
 
-const result = await response.text();
-
-console.log(result);
+            if (canonicalMatch) {
+                const reportUrl = canonicalMatch[1];
+                console.log("آدرس گزارش:", reportUrl);
+            } else {
+                console.log("تگ canonical پیدا نشد.");
+            }
+        })
+    })
+})
