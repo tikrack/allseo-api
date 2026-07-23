@@ -1,19 +1,3 @@
-const pageResponse = await fetch(
-  "https://allseo.ir/",
-  {
-    credentials: "include",
-  }
-);
-
-const html = await pageResponse.text();
-
-const parser = new DOMParser();
-const doc = parser.parseFromString(html, "text/html");
-
-const csrfToken = doc.querySelector(
-  'input[name="csrfmiddlewaretoken"]'
-)?.value;
-
 const response = await fetch(
   "https://allseo.ir/website-analyzer/analyze/",
   {
