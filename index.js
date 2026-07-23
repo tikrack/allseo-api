@@ -1,35 +1,29 @@
-const getCSRF = require("./csrf-token")
+const analyze = require("./analyzer");
+const getInfo = require("./info");
+const { basicResponse } = require("./response");
 
-getCSRF().then(({ csrfToken, cookie }) => {
-    fetch(
-        "https://allseo.ir/website-analyzer/analyze/",
-        {
-            method: "POST",
+async function start() {
+  try {
+    const targets = await getInfo();
+    
+    for (const target of targets) {
+      try {
+        const reportUrl = await analyze({
+          suite: target.suite,
+          url: target.url
+        });
 
-            credentials: "include",
+        basicResponse({
+          info: target,
+          analyze_url: reportUrl
+        });
+      } catch (err) {
+        console.error(`\x1b[31m[ERROR]\x1b[0m ${err.message}`);
+      }
+    }
+  } catch (error) {
+    console.error("Failed to read project info:", error.message);
+  }
+}
 
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-                "X-CSRFToken": csrfToken, 
-                "Cookie": cookie            
-            },
-
-            body: new URLSearchParams({
-                csrfmiddlewaretoken: csrfToken,
-                suite: "general",
-                url: "https://example.com",
-            }),
-        }
-    ).then(r => {
-        r.text().then(html => {
-            const canonicalMatch = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
-
-            if (canonicalMatch) {
-                const reportUrl = canonicalMatch[1];
-                console.log("آدرس گزارش:", reportUrl);
-            } else {
-                console.log("تگ canonical پیدا نشد.");
-            }
-        })
-    })
-})
+start();

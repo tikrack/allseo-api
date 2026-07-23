@@ -1,4 +1,12 @@
-{
-    "url": "https://soft98.ir",
-    "suite": "general"
-}
+[
+    {
+        "name": "ArmaghanKashan",
+        "url": "https://armaghankashan.com/",
+        "suite": "general"
+    },
+    {
+        "name": "SalehMarket",
+        "url": "https://salehmarket.com/",
+        "suite": "general"
+    }
+]
